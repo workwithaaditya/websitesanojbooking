@@ -627,31 +627,6 @@ h4 { font-size: 1.125rem; font-weight: 600; }
   filter: brightness(1.2);
 }
 
-.hero-card__cta {
-  margin-top: var(--sp-3);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.45rem 0.95rem;
-  border-radius: 999px;
-  font-family: 'Plus Jakarta Sans', var(--font-body);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.92);
-  background: rgba(255,255,255,0.16);
-  border: 1px solid rgba(255,255,255,0.3);
-  backdrop-filter: blur(3px);
-  transition: transform .3s ease, background .3s ease, color .3s ease;
-}
-
-.hero-card:hover .hero-card__cta {
-  transform: translateY(-1px);
-  background: rgba(255,255,255,0.23);
-  color: #fff;
-}
-
 @media (max-width: 540px) {
   .hero-card {
     border-radius: 18px;
@@ -670,8 +645,7 @@ h4 { font-size: 1.125rem; font-weight: 600; }
   .hero-card,
   .hero-card__img,
   .hero-card__overlay,
-  .hero-card__title,
-  .hero-card__cta {
+  .hero-card__title {
     transition: none;
   }
 }
@@ -1277,10 +1251,19 @@ select.form-control {
 
 /* ---------- Page Header (Inner pages) ---------- */
 .page-header {
+  position: relative;
   padding: calc(64px + var(--sp-10)) 0 var(--sp-10);
   background: linear-gradient(135deg, var(--blue-900), var(--blue-700));
   color: #fff;
   text-align: center;
+  overflow: hidden;
+}
+
+.page-header--train {
+  background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(30, 58, 138, 0.75)), url('images/backgrounds/for%20train%201.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .page-header h1 {
