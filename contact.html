@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Sanoj Kumar Maurya – Travel Booking Agent | Sanoj Travels</title>
+  <meta name="description" content="Contact Sanoj Kumar Maurya for confirmed train, flight, and hotel bookings. Call or WhatsApp for instant assistance. Available 24/7.">
+  <meta name="keywords" content="contact travel agent, booking agent contact, travel booking help, sanoj kumar maurya contact">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <div class="navbar__brand-icon"><i data-lucide="plane" class="icon"></i></div>
+        Sanoj Travels
+      </a>
+      <div class="navbar__links">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="train-booking.html" class="navbar__link">Train</a>
+        <a href="flight-booking.html" class="navbar__link">Flight</a>
+        <a href="hotel-booking.html" class="navbar__link">Hotel</a>
+        <a href="tour-packages.html" class="navbar__link">Tours</a>
+        <a href="services.html" class="navbar__link">Services</a>
+        <a href="contact.html" class="navbar__link navbar__link--active">Contact</a>
+      </div>
+      <a href="tel:+918860586724" class="btn btn--primary navbar__cta"><i data-lucide="phone" class="icon"></i> Call Now</a>
+      <div class="navbar__hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="train-booking.html" class="mobile-menu__link">Train Booking</a>
+    <a href="flight-booking.html" class="mobile-menu__link">Flight Booking</a>
+    <a href="hotel-booking.html" class="mobile-menu__link">Hotel Booking</a>
+    <a href="tour-packages.html" class="mobile-menu__link">Tour Packages</a>
+    <a href="services.html" class="mobile-menu__link">Insurance & Services</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <span class="badge badge--gold" style="margin-bottom: var(--sp-4); display:inline-flex;">
+        <i data-lucide="mail" class="icon"></i> Contact Us
+      </span>
+      <h1>Get in Touch</h1>
+      <p>Have a booking request or question? Reach out to Sanoj directly — we're available 24/7!</p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info Card -->
+        <div class="contact-info-card animate-on-scroll">
+          <div class="text-center" style="margin-bottom: var(--sp-5);">
+            <img src="images/sanoj.png" alt="Sanoj Kumar Maurya" class="agent-photo">
+            <h3 style="margin-top: var(--sp-4);">Sanoj Kumar Maurya</h3>
+            <p style="color: var(--gray-500); font-size: .9rem;">Your Personal Travel Booking Expert</p>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i data-lucide="phone" class="icon"></i></div>
+            <div>
+              <div class="contact-info__label">Phone (Call / WhatsApp)</div>
+              <div class="contact-info__value">+91 88605 86724</div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i data-lucide="message-circle" class="icon"></i></div>
+            <div>
+              <div class="contact-info__label">WhatsApp</div>
+              <div class="contact-info__value">Message anytime for quick booking</div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i data-lucide="clock" class="icon"></i></div>
+            <div>
+              <div class="contact-info__label">Business Hours</div>
+              <div class="contact-info__value">Available 24/7 for urgent bookings</div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i data-lucide="map-pin" class="icon"></i></div>
+            <div>
+              <div class="contact-info__label">Service Area</div>
+              <div class="contact-info__value">Pan-India (All cities covered)</div>
+            </div>
+          </div>
+
+          <div class="contact-buttons">
+            <a href="tel:+918860586724" class="btn btn--gold btn--lg btn--block" id="contactCallBtn">
+              <i data-lucide="phone" class="icon"></i> Call Sanoj Now
+            </a>
+            <a href="https://wa.me/918860586724?text=Hi%20Sanoj%2C%20I%20need%20help%20with%20a%20booking." class="btn btn--whatsapp btn--lg btn--block" target="_blank" id="contactWhatsAppBtn">
+              <i data-lucide="message-circle" class="icon"></i> WhatsApp Sanoj
+            </a>
+          </div>
+        </div>
+
+        <!-- Query Form -->
+        <div class="booking-form animate-on-scroll" id="contactFormWrapper">
+          <h3 style="margin-bottom: var(--sp-6); text-align:center;">Send a Query</h3>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName">Your Name <span class="required">*</span></label>
+              <input type="text" id="contactName" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="contactMobile">Mobile Number <span class="required">*</span></label>
+              <input type="tel" id="contactMobile" name="mobile" class="form-control" placeholder="Enter 10-digit number" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject <span class="required">*</span></label>
+              <select id="contactSubject" name="subject" class="form-control" required>
+                <option value="">Select Subject</option>
+                <option value="Train Booking Enquiry">Train Booking Enquiry</option>
+                <option value="Flight Booking Enquiry">Flight Booking Enquiry</option>
+                <option value="Bus Booking Enquiry">Bus Booking Enquiry</option>
+                <option value="Taxi Booking Enquiry">Taxi / Cab Booking</option>
+                <option value="Hotel Booking Enquiry">Hotel Booking Enquiry</option>
+                <option value="Tour Package Enquiry">Tour / Holiday Package Enquiry</option>
+                <option value="Honeymoon Package">Honeymoon Package</option>
+                <option value="Insurance Enquiry">Insurance Enquiry (Health/Term/Car/Bike)</option>
+                <option value="Financial Planning">Financial Planning (SIP/LIC/Retirement)</option>
+                <option value="Credit Card Service">Credit Card Service</option>
+                <option value="Pricing Question">Pricing Question</option>
+                <option value="Urgent Booking Help">Urgent Booking Help</option>
+                <option value="General Question">General Question</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Your Message <span class="required">*</span></label>
+              <textarea id="contactMessage" name="message" class="form-control" rows="4" placeholder="Describe your requirement..." required></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn--whatsapp btn--lg btn--block" id="contactSubmitBtn">
+                <i data-lucide="send" class="icon"></i> Send Query via WhatsApp
+              </button>
+            </div>
+            <p class="form-note">Your query will be sent to Sanoj via WhatsApp for a quick response.</p>
+          </form>
+
+          <div class="form-success">
+            <div class="form-success__icon"><i data-lucide="check" class="icon--xl" style="width:36px;height:36px;"></i></div>
+            <h3>Query Sent!</h3>
+            <p>Your message has been sent via WhatsApp. Sanoj will respond shortly!</p>
+            <a href="index.html" class="btn btn--primary" style="margin-top: var(--sp-5);"><i data-lucide="arrow-left" class="icon"></i> Back to Home</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK BOOKING -->
+  <section class="section section-alt">
+    <div class="container text-center">
+      <h2 class="animate-on-scroll">Ready to Book?</h2>
+      <p class="section-subtitle animate-on-scroll">Skip the form and book directly — choose your service below.</p>
+      <div style="display:flex; gap:var(--sp-4); justify-content:center; flex-wrap:wrap; margin-top:var(--sp-8);" class="animate-on-scroll">
+        <a href="train-booking.html" class="btn btn--primary btn--lg" id="contactQuickTrain"><i data-lucide="train-front" class="icon"></i> Book Train</a>
+        <a href="flight-booking.html" class="btn btn--primary btn--lg" id="contactQuickFlight"><i data-lucide="plane" class="icon"></i> Book Flight</a>
+        <a href="hotel-booking.html" class="btn btn--gold btn--lg" id="contactQuickHotel"><i data-lucide="building-2" class="icon"></i> Book Hotel</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand"><i data-lucide="plane" style="display:inline;width:18px;height:18px;vertical-align:middle;"></i> Sanoj Travels</div>
+          <p class="footer__desc">Your trusted travel & financial services partner. Train, flight, bus, taxi, tour packages, insurance & investment plans.</p>
+        </div>
+        <div><h4>Travel Bookings</h4><a href="train-booking.html" class="footer__link">Train Booking</a><a href="flight-booking.html" class="footer__link">Flight Booking</a><a href="hotel-booking.html" class="footer__link">Hotel Booking</a><a href="tour-packages.html" class="footer__link">Tour Packages</a></div>
+        <div><h4>More Services</h4><a href="services.html" class="footer__link">Insurance & Finance</a><a href="pricing.html" class="footer__link">Pricing</a><a href="contact.html" class="footer__link">Contact Us</a></div>
+        <div><h4>Contact</h4><a href="tel:+918860586724" class="footer__link"><i data-lucide="phone" style="display:inline;width:14px;height:14px;vertical-align:middle;"></i> +91 88605 86724</a><a href="https://wa.me/918860586724" class="footer__link" target="_blank"><i data-lucide="message-circle" style="display:inline;width:14px;height:14px;vertical-align:middle;"></i> WhatsApp Us</a></div>
+      </div>
+      <div class="footer__bottom">© <span id="currentYear">2026</span> Sanoj Kumar Maurya. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="sticky-buttons" id="stickyButtons">
+    <a href="tel:+918860586724" class="btn btn--call" id="stickyCall"><i data-lucide="phone" class="icon"></i> Call</a>
+    <a href="https://wa.me/918860586724" class="btn btn--whatsapp" target="_blank" id="stickyWhatsApp"><i data-lucide="message-circle" class="icon"></i> WhatsApp</a>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

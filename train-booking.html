@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Ticket Booking – Tatkal, Premium Tatkal & Confirmed Seats | Sanoj Travels</title>
+  <meta name="description" content="Book confirmed train tickets including Tatkal and Premium Tatkal with Sanoj Kumar Maurya. Last-minute booking specialist with 10,000+ satisfied customers.">
+  <meta name="keywords" content="train ticket booking, tatkal booking, premium tatkal, confirmed train ticket, last minute train booking, IRCTC booking agent">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <div class="navbar__brand-icon"><i data-lucide="plane" class="icon"></i></div>
+        Sanoj Travels
+      </a>
+      <div class="navbar__links">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="train-booking.html" class="navbar__link navbar__link--active">Train</a>
+        <a href="flight-booking.html" class="navbar__link">Flight</a>
+        <a href="hotel-booking.html" class="navbar__link">Hotel</a>
+        <a href="tour-packages.html" class="navbar__link">Tours</a>
+        <a href="services.html" class="navbar__link">Services</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+      </div>
+      <a href="tel:+918860586724" class="btn btn--primary navbar__cta">
+        <i data-lucide="phone" class="icon"></i> Call Now
+      </a>
+      <div class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="train-booking.html" class="mobile-menu__link">Train Booking</a>
+    <a href="flight-booking.html" class="mobile-menu__link">Flight Booking</a>
+    <a href="hotel-booking.html" class="mobile-menu__link">Hotel Booking</a>
+    <a href="tour-packages.html" class="mobile-menu__link">Tour Packages</a>
+    <a href="services.html" class="mobile-menu__link">Insurance & Services</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <span class="badge badge--gold" style="margin-bottom: var(--sp-4); display:inline-flex;">
+        <i data-lucide="train-front" class="icon"></i> Train Booking
+      </span>
+      <h1>Book Confirmed Train Tickets</h1>
+      <p>Tatkal, Premium Tatkal & Normal — get your confirmed seat even at the last moment.</p>
+    </div>
+  </div>
+
+  <!-- BOOKING FORM -->
+  <section class="form-page">
+    <div class="container">
+      <div class="booking-form" id="trainFormWrapper">
+        <form id="trainBookingForm">
+
+          <!-- Step 1: Travel Details -->
+          <div class="form-section-title">
+            <i data-lucide="calendar" class="icon"></i> Travel Details
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="trainDate">Travel Date <span class="required">*</span></label>
+              <input type="date" id="trainDate" name="date" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="trainTatkal">Booking Type <span class="required">*</span></label>
+              <select id="trainTatkal" name="tatkal" class="form-control" required>
+                <option value="">Select Type</option>
+                <option value="Normal">Normal Booking</option>
+                <option value="Tatkal">Tatkal</option>
+                <option value="Premium Tatkal">Premium Tatkal</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Step 2: Route -->
+          <div class="form-section-title" style="margin-top: var(--sp-4);">
+            <i data-lucide="map-pin" class="icon"></i> Route
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="trainFrom">From Station <span class="required">*</span></label>
+              <input type="text" id="trainFrom" name="from" class="form-control" placeholder="Search station..." autocomplete="off" required>
+            </div>
+            <div class="form-group">
+              <label for="trainTo">To Station <span class="required">*</span></label>
+              <input type="text" id="trainTo" name="to" class="form-control" placeholder="Search station..." autocomplete="off" required>
+            </div>
+          </div>
+
+          <!-- Step 3: Train & Class -->
+          <div class="form-section-title" style="margin-top: var(--sp-4);">
+            <i data-lucide="train-front" class="icon"></i> Train & Class
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="trainName_search">Train Name <span class="required">*</span></label>
+              <input type="text" id="trainName_search" name="train" class="form-control" placeholder="Search train name..." autocomplete="off" required>
+            </div>
+            <div class="form-group">
+              <label for="trainClass">Class / Tier <span class="required">*</span></label>
+              <select id="trainClass" name="class" class="form-control" required>
+                <option value="">Select Class</option>
+                <option value="Sleeper (SL)">Sleeper (SL)</option>
+                <option value="AC 3 Tier (3A)">AC 3 Tier (3A)</option>
+                <option value="AC 3 Economy (3E)">AC 3 Economy (3E)</option>
+                <option value="AC 2 Tier (2A)">AC 2 Tier (2A)</option>
+                <option value="AC 1st Class (1A)">AC 1st Class (1A)</option>
+                <option value="AC Chair Car (CC)">AC Chair Car (CC)</option>
+                <option value="Executive Chair Car (EC)">Executive Chair Car (EC)</option>
+                <option value="Second Sitting (2S)">Second Sitting (2S)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Step 4: Contact -->
+          <div class="form-section-title" style="margin-top: var(--sp-4);">
+            <i data-lucide="smartphone" class="icon"></i> Contact
+          </div>
+
+          <div class="form-group">
+            <label for="trainMobile">Your Mobile Number <span class="required">*</span></label>
+            <input type="tel" id="trainMobile" name="mobile" class="form-control" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}" required>
+          </div>
+
+          <!-- Step 5: Passengers -->
+          <div class="passengers-section">
+            <div class="passengers-section__header">
+              <div class="passengers-section__title">
+                <i data-lucide="users" class="icon"></i>
+                Passengers
+                <span class="passengers-section__count" id="passengerCountDisplay">1</span>
+              </div>
+              <button type="button" class="btn btn--add" id="addTrainPassenger">
+                <i data-lucide="user-plus" class="icon"></i> Add Passenger
+              </button>
+            </div>
+            <div id="trainPassengers">
+              <!-- Passenger cards will be rendered here by JS -->
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn--whatsapp btn--lg btn--block" id="trainSubmitBtn">
+              <i data-lucide="send" class="icon"></i> Send Booking Request via WhatsApp
+            </button>
+          </div>
+          <p class="form-note">Your booking request will be sent directly to Sanoj via WhatsApp for instant processing.</p>
+        </form>
+
+        <div class="form-success">
+          <div class="form-success__icon"><i data-lucide="check" class="icon--xl" style="width:36px;height:36px;"></i></div>
+          <h3>Booking Request Sent!</h3>
+          <p>Your train booking request has been sent to Sanoj via WhatsApp. You'll receive a confirmation shortly.</p>
+          <a href="index.html" class="btn btn--primary" style="margin-top: var(--sp-5);">
+            <i data-lucide="arrow-left" class="icon"></i> Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand"><i data-lucide="plane" style="display:inline;width:18px;height:18px;vertical-align:middle;"></i> Sanoj Travels</div>
+          <p class="footer__desc">Your trusted travel & financial services partner. Train, flight, bus, taxi, tour packages, insurance & investment plans.</p>
+        </div>
+        <div>
+          <h4>Travel Bookings</h4>
+          <a href="train-booking.html" class="footer__link">Train Booking</a>
+          <a href="flight-booking.html" class="footer__link">Flight Booking</a>
+          <a href="hotel-booking.html" class="footer__link">Hotel Booking</a>
+          <a href="tour-packages.html" class="footer__link">Tour Packages</a>
+        </div>
+        <div>
+          <h4>More Services</h4>
+          <a href="services.html" class="footer__link">Insurance & Finance</a>
+          <a href="pricing.html" class="footer__link">Pricing</a>
+          <a href="contact.html" class="footer__link">Contact Us</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="tel:+918860586724" class="footer__link"><i data-lucide="phone" style="display:inline;width:14px;height:14px;vertical-align:middle;"></i> +91 88605 86724</a>
+          <a href="https://wa.me/918860586724" class="footer__link" target="_blank"><i data-lucide="message-circle" style="display:inline;width:14px;height:14px;vertical-align:middle;"></i> WhatsApp Us</a>
+        </div>
+      </div>
+      <div class="footer__bottom">© <span id="currentYear">2026</span> Sanoj Kumar Maurya. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- STICKY BUTTONS -->
+  <div class="sticky-buttons" id="stickyButtons">
+    <a href="tel:+918860586724" class="btn btn--call" id="stickyCall">
+      <i data-lucide="phone" class="icon"></i> Call
+    </a>
+    <a href="https://wa.me/918860586724" class="btn btn--whatsapp" target="_blank" id="stickyWhatsApp">
+      <i data-lucide="message-circle" class="icon"></i> WhatsApp
+    </a>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="booking-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
