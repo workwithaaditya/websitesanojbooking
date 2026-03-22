@@ -1590,12 +1590,44 @@ select.form-control {
 .tour-card {
   background: var(--surface);
   border-radius: var(--radius-xl);
-  padding: var(--sp-6);
+  padding: 0;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--gray-100);
   transition: all .45s var(--ease-spring);
   position: relative;
   overflow: hidden;
+}
+
+.tour-card__img-wrap {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.tour-card__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s var(--ease-spring);
+}
+
+.tour-card:hover .tour-card__img-wrap img {
+  transform: scale(1.08);
+}
+
+/* Gradient overlay on image bottom for smooth transition */
+.tour-card__img-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 60px;
+  background: linear-gradient(to top, var(--surface), transparent);
+  pointer-events: none;
+}
+
+.tour-card__body {
+  padding: var(--sp-5) var(--sp-6) var(--sp-6);
 }
 
 /* Shine sweep on hover */
