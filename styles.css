@@ -1260,7 +1260,7 @@ select.form-control {
 }
 
 .page-header--train {
-  background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(30, 58, 138, 0.75)), url('images/backgrounds/for%20train%201.png');
+  background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(30, 58, 138, 0.75)), url('images/backgrounds/train-header-new.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
